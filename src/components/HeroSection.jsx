@@ -1,9 +1,10 @@
 import { FileUser } from "lucide-react";
 import React from "react";
+import SocialBar from "./SocialBar";
 
 function HeroSection() {
   return (
-    <div className="min-h-screen w-full flex items-start justify-center text-center px-4 ">
+    <div className="min-h-screen w-full flex items-start justify-center text-center px-4 relative ">
       <div className="max-w-3xl ">
         <div className="flex justify-center mb-8">
           <img src="/logo.png" alt="logo" className="w-32 h-32 rounded-full" />
@@ -33,6 +34,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
+    <SocialBar/>
     </div>
   );
 }
