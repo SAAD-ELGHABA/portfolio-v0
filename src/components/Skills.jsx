@@ -39,7 +39,7 @@ function Skills({ dir = true, skills = [] }) {
         className="container mx-auto px-2 flex justify-center items-center space-x-2"
       >
         {skills.map((skill, index) => (
-          <div key={index} className="px-2">
+          <div key={index} className="px-2 hover:scale-105 transition">
             <div className=" rounded-lg p-2 text-center">
               <img
                 src={skill.image}

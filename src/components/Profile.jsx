@@ -2,7 +2,7 @@ import React from "react";
 
 function Profile() {
   return (
-    <div className="max-h-screen w-full  bg-white mx-auto rounded-xl text-center relative -top-20 shadow-xl  p-8 flex flex-col items-center">
+    <div className="max-h-screen w-full  mx-auto rounded-xl text-center relative -top-20 p-8 flex flex-col items-center">
       <img
         src="/cv-pic-v2-28-07-25.jpg"
         alt="Profile"

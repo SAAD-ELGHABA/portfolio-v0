@@ -1,5 +1,4 @@
 export const skills_2 = [
-      { name: "Python", image: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000" },
       { name: "Laravel", image: "https://img.icons8.com/?size=100&id=hUvxmdu7Rloj&format=png&color=000000" },
       { name: "React", image: "https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000" },
       { name: "Git", image: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000" },

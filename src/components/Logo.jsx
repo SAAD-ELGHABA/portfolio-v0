@@ -7,7 +7,7 @@ function Logo() {
       to="/"
       className="text-xl font-bold "
     >
-      <h1 className="text-blue-600 flex flex-col items-center">
+      <h1 className="text-blue-600 flex flex-col lg:items-start items-center">
         <span>ELGHABA.SAAD</span>
         <span className="text-xs text-gray-400 ">saadlraba@gmail.com</span>
       </h1>

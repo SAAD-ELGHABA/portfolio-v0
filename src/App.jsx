@@ -8,15 +8,12 @@ import { skills_1 } from "./constants/skills_1.js";
 import { skills_2 } from "./constants/skills_2.js";
 import FadeInWhenVisible from "./components/FadeInWhenVisible";
 import Projects from "./components/Projects.jsx";
+import AnimatedBg from "./assets/AnimatedBg.jsx";
 
 function App() {
   return (
-    <div
-      className="relative min-h-screen w-full bg-fixed bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/bg.jpg')",
-      }}
-    >
+    <div className="relative min-h-screen w-full bg-fixed bg-cover bg-center">
+      <AnimatedBg />
       <header className="fixed top-0 right-0 bg-transparent z-50 w-full">
         <NavBar />
       </header>
@@ -34,7 +31,7 @@ function App() {
       </main>
 
       <FadeInWhenVisible delay={0.3}>
-        <section className="py-4 w-full bg-white">
+        <section className="py-4 w-full ">
           <div className="h-1 w-8 bg-gray-300 mx-auto mb-6"></div>
           <h2 className="text-2xl font-bold mb-6 text-center">My Skills</h2>
           <Skills skills={skills_1} dir={true} />
@@ -42,9 +39,13 @@ function App() {
         </section>
       </FadeInWhenVisible>
       <FadeInWhenVisible delay={0.3}>
-        <Projects/>
+        <section className="py-8 w-full ">
+          <div className="h-1 w-8 bg-gray-300 mx-auto mb-6"></div>
+          <h2 className="text-2xl font-bold mb-6 text-center">My Projects</h2>
+          <Projects />
+        </section>
       </FadeInWhenVisible>
-        <Navigation />
+      <Navigation />
     </div>
   );
 }

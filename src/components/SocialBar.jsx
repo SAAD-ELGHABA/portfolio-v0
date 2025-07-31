@@ -31,7 +31,7 @@ function SocialBar() {
         className="text-white hover:text-gray-200"
       >
         <img
-          src="https://img.icons8.com/?size=100&id=qyRpAggnV0zH&format=png&color=000000"
+          src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
           alt=""
           className="w-6 h-6"
         />
