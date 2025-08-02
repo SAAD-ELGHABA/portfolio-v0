@@ -1,12 +1,13 @@
 import { FileUser } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 import SocialBar from "./SocialBar";
+import Resume from "./Resume";
 
 function HeroSection() {
+  const [toggleResumeView, setToggleResumeView] = useState(false);
   return (
     <div className="min-h-screen w-full flex items-start justify-center text-center px-4 relative ">
       <div className="max-w-3xl ">
-
         <div className="flex justify-center">
           <img src="/ES.png" alt="logo" className="w-46 drop-shadow-sm" />
         </div>
@@ -29,13 +30,21 @@ function HeroSection() {
           >
             View My Projects
           </a>
-          <div className="flex items-center lg:space-x-2  px-6 py-3 rounded-lg cursor-pointer  text-blue-600 border border-blue-600 hover:scale-105 transition">
+          <div
+            className="flex items-center lg:space-x-2  px-6 py-3 rounded-lg cursor-pointer  text-blue-600 border border-blue-600 hover:scale-105 transition"
+            onClick={() => {
+              setToggleResumeView(true);
+            }}
+          >
             <FileUser />
             <h2>My Resume</h2>
           </div>
         </div>
       </div>
-    <SocialBar/>
+      <SocialBar />
+      {toggleResumeView && (
+        <Resume isOpen={toggleResumeView} onClose={setToggleResumeView} />
+      )}
     </div>
   );
 }

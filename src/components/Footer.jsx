@@ -2,10 +2,10 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="min-h-[50vh] bg-[#155dfc] rounded-top mt-20 w-full  mx-auto p-8 text-white relative overflow-hidden">
+    <div className="min-h-[50vh]  rounded-top mt-20 w-full  mx-auto p-8 relative overflow-hidden">
       <div className="flex justify-center mb-6">
         <img
-          src="/icon-footer.png"
+          src="/ES.png"
           alt="logo"
           className="w-46 drop-shadow-md"
         />
@@ -13,22 +13,22 @@ function Footer() {
 
       <ul className="flex flex-wrap justify-center gap-4 text-sm md:text-lg font-semibold">
         <li>
-          <a href="#home" className="hover:underline">
+          <a href="#home" className="hover:underline hover:text-blue-600">
             Home
           </a>
         </li>
         <li>
-          <a href="#about" className="hover:underline">
+          <a href="#about" className="hover:underline hover:text-blue-600">
             About
           </a>
         </li>
         <li>
-          <a href="#services" className="hover:underline">
+          <a href="#services" className="hover:underline hover:text-blue-600">
             Services
           </a>
         </li>
         <li>
-          <a href="#contact" className="hover:underline">
+          <a href="#contact" className="hover:underline hover:text-blue-600">
             Contact
           </a>
         </li>

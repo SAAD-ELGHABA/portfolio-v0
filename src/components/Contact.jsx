@@ -8,6 +8,7 @@ import {
   Instagram,
   Linkedin,
   Send,
+  MoveUpRight,
 } from "lucide-react";
 import ContinuousTextSlider from "./ContinuousTextSlider";
 
@@ -15,9 +16,6 @@ function Contact() {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed flex flex-col items-center justify-center"
-      style={{
-        backgroundImage: "url('bg.jpg')",
-      }}
     >
         <ContinuousTextSlider/>
       <div className="p-4 md:p-10 rounded-xl w-full md:max-w-[90%]  grid md:grid-cols-2 gap-10">
@@ -70,7 +68,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-md md:px-6 py-3 shadow-lg text-black md:p-6 p-2 ">
+        <div className="bg-white/10 backdrop-blur-md md:px-6 py-3 shadow-lg text-black md:p-6 p-2 rounded">
           <form className="space-y-5">
             <div>
               <label className="block text-sm font-medium mb-1">
@@ -109,10 +107,10 @@ function Contact() {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition flex items-center space-x-2 justify-center"
+              className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-white hover:text-blue-600 transition flex items-center space-x-2 justify-center cursor-pointer border border-blue-600"
             >
               <span>Send Message</span>
-              <Send className="h-4 w-4"/>
+              <MoveUpRight  className="h-4 w-4"/>
             </button>
           </form>
         </div>

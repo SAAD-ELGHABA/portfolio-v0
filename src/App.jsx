@@ -1,20 +1,16 @@
-import React, { useEffect } from "react";
-import NavBar from "./components/NavBar";
-import HeroSection from "./components/HeroSection";
-import Profile from "./components/Profile";
-import Navigation from "./components/Navigation";
-import Skills from "./components/Skills";
-import { skills_1 } from "./constants/skills_1.js";
-import { skills_2 } from "./constants/skills_2.js";
-import FadeInWhenVisible from "./components/FadeInWhenVisible";
-import Projects from "./components/Projects.jsx";
-import AnimatedBg from "./assets/AnimatedBg.jsx";
-import Contact from "./components/Contact.jsx";
+import React, { useEffect, useState } from "react";
+
 import SplashScreen from "./components/SplashScreen.jsx";
-import Footer from "./components/Footer.jsx";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import Service from "./pages/Service.jsx";
+import AnimatedBg from "./assets/AnimatedBg.jsx";
+import NavBar from "./components/NavBar.jsx";
+import Navigation from "./components/Navigation.jsx";
 
 function App() {
-  const [isLoading, setIsLoading] = React.useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -22,50 +18,21 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-  return isLoading ? (
-    <SplashScreen />
-  ) : (
-    <div className="relative min-h-screen w-full bg-fixed bg-cover bg-center">
-      <AnimatedBg />
+
+  if (isLoading) return <SplashScreen />;
+
+  return (
+    <>
       <header className="fixed top-0 right-0 bg-transparent z-50 w-full">
         <NavBar />
       </header>
-
-      <main className="pt-20 space-y-20">
-        <FadeInWhenVisible delay={0.1}>
-          <HeroSection />
-        </FadeInWhenVisible>
-
-        <FadeInWhenVisible delay={0.2}>
-          <div className="relative flex items-center justify-center max-h-screen ">
-            <Profile />
-          </div>
-        </FadeInWhenVisible>
-      </main>
-
-      <FadeInWhenVisible delay={0.3}>
-        <section className="py-4 w-full ">
-          <div className="h-1 w-8 bg-gray-300 mx-auto mb-6"></div>
-          <h2 className="text-2xl font-bold mb-6 text-center">My Skills</h2>
-          <Skills skills={skills_1} dir={true} />
-          <Skills skills={skills_2} dir={false} />
-        </section>
-      </FadeInWhenVisible>
-      <FadeInWhenVisible delay={0.3}>
-        <section className="py-8 w-full ">
-          <div className="h-1 w-8 bg-gray-300 mx-auto mb-6"></div>
-          <h2 className="text-2xl font-bold mb-6 text-center">My Projects</h2>
-          <Projects />
-        </section>
-      </FadeInWhenVisible>
-      <FadeInWhenVisible delay={0.3}>
-        <Contact />
-      </FadeInWhenVisible>
-      <FadeInWhenVisible delay={0.3}>
-        <Footer/>
-      </FadeInWhenVisible>
+      <AnimatedBg />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/service/:title" element={<Service />} />
+      </Routes>
       <Navigation />
-    </div>
+    </>
   );
 }
 
