@@ -91,3 +91,25 @@ html {
   scrollbar-width: thin !important;
   scrollbar-color: #155dfc #f1f1f1 !important;
 }
+
+
+.custom-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+
+
+.text-stroke-blue {
+  color: white;
+  -webkit-text-stroke: 1px #155dfc;
+  text-shadow: 1px #155dfc; /* for fallback */
+}
+
+
+*{
+  scroll-behavior: smooth;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Github } from "lucide-react";
-
+import {Link} from 'react-router-dom'
 const projects = [
   {
     title: "AI Desktop Assistant",
@@ -42,11 +42,14 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="relative min-h-screen p-6 overflow-hidden">
+    <div className="relative min-h-screen p-6 overflow-hidden"
+      id="projects"
+    >
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div
+            <Link
+            to={`/project/${project?.title}`}
               key={index}
               className="max-h-[500px] flex flex-col bg-white rounded-2xl shadow-lg border border-red-100 hover:shadow-blue-300 transition duration-300 group overflow-hidden"
             >
@@ -81,7 +84,7 @@ function Projects() {
                   ))}
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

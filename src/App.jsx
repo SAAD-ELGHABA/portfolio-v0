@@ -7,6 +7,7 @@ import Service from "./pages/Service.jsx";
 import AnimatedBg from "./assets/AnimatedBg.jsx";
 import NavBar from "./components/NavBar.jsx";
 import Navigation from "./components/Navigation.jsx";
+import Project from "./pages/Project.jsx";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,7 +15,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/service/:title" element={<Service />} />
+        <Route path="/project/:title" element={<Project />} />
       </Routes>
       <Navigation />
     </>
