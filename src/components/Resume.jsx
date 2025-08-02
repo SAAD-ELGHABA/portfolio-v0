@@ -18,9 +18,9 @@ function Resume({ isOpen, onClose }) {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.3 }}
-            className=" rounded p-8 min-w-lg w-[90vw] shadow-xl h-[90vh] overflow-auto custom-scrollbar bg-white"
+            className=" rounded p-8 min-w-lg w-[90%] shadow-xl h-[90vh] overflow-auto custom-scrollbar bg-white"
           >
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center w-full justify-between mb-4">
               <h2 className="text-2xl font-bold  text-center">My Resume</h2>
               <button
                 className="px-2 py-2 rounded-full bg-gray-300 text-white hover:bg-blue-700 transition-all block"
