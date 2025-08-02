@@ -53,3 +53,41 @@
     transform: translate(0%, 0%);
   }
 }
+
+
+.blob {
+  border-radius: 60%;
+  animation: blob 3s infinite ease-in-out;
+}
+
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -20px) scale(1.05, 0.65);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.65, 1.05);
+  }
+}
+
+
+html::-webkit-scrollbar {
+  width: 12px !important;
+}
+
+html::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #155dfc !important;
+  border-radius: 6px !important;
+  border: 3px solid #f1f1f1 !important;
+}
+
+html {
+  scrollbar-width: thin !important;
+  scrollbar-color: #155dfc #f1f1f1 !important;
+}

@@ -6,7 +6,7 @@ function SocialBar() {
         href="https://www.linkedin.com/in/YOUR_LINKEDIN"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-white hover:text-gray-200"
+        className="text-white hover:text-gray-200 hover:scale-110 transition-transform duration-200"
       >
         <img
           src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000"
@@ -18,7 +18,7 @@ function SocialBar() {
         href="https://github.com/YOUR_GITHUB"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-white hover:text-gray-200"
+        className="text-white hover:text-gray-200 hover:scale-110 transition-transform duration-200"
       >
         <img
           src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000"
@@ -28,7 +28,7 @@ function SocialBar() {
       </a>
       <a
         href="mailto:your.email@example.com"
-        className="text-white hover:text-gray-200"
+        className="text-white hover:text-gray-200 hover:scale-110 transition-transform duration-200"
       >
         <img
           src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"

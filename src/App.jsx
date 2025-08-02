@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import Profile from "./components/Profile";
@@ -9,9 +9,22 @@ import { skills_2 } from "./constants/skills_2.js";
 import FadeInWhenVisible from "./components/FadeInWhenVisible";
 import Projects from "./components/Projects.jsx";
 import AnimatedBg from "./assets/AnimatedBg.jsx";
+import Contact from "./components/Contact.jsx";
+import SplashScreen from "./components/SplashScreen.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
-  return (
+  const [isLoading, setIsLoading] = React.useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+  return isLoading ? (
+    <SplashScreen />
+  ) : (
     <div className="relative min-h-screen w-full bg-fixed bg-cover bg-center">
       <AnimatedBg />
       <header className="fixed top-0 right-0 bg-transparent z-50 w-full">
@@ -44,6 +57,12 @@ function App() {
           <h2 className="text-2xl font-bold mb-6 text-center">My Projects</h2>
           <Projects />
         </section>
+      </FadeInWhenVisible>
+      <FadeInWhenVisible delay={0.3}>
+        <Contact />
+      </FadeInWhenVisible>
+      <FadeInWhenVisible delay={0.3}>
+        <Footer/>
       </FadeInWhenVisible>
       <Navigation />
     </div>

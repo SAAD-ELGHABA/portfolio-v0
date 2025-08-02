@@ -6,8 +6,9 @@ function HeroSection() {
   return (
     <div className="min-h-screen w-full flex items-start justify-center text-center px-4 relative ">
       <div className="max-w-3xl ">
+
         <div className="flex justify-center">
-          <img src="/ES.png" alt="logo" className="w-56 rounded-full drop-shadow-sm" />
+          <img src="/ES.png" alt="logo" className="w-46 drop-shadow-sm" />
         </div>
         <div className="flex flex-col items-center justify-center text-center mb-6 space-y-4">
           <h1 className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 drop-shadow-lg">
