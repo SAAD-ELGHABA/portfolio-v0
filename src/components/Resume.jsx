@@ -25,7 +25,7 @@ function Resume({ isOpen, onClose }) {
                 My Resume
               </h2>
               <button
-                className="absolute top-4 right-4 p-2 rounded-full bg-gray-400 hover:bg-blue-600 transition-colors text-white"
+                className="absolute top-4 right-4 p-2 rounded-full z-50 bg-gray-400 hover:bg-blue-600 transition-colors text-white"
                 onClick={() => onClose(false)}
               >
                 <X size={20} />

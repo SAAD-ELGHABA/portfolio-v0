@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -30,7 +30,7 @@ function App() {
       <AnimatedBg />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/service/:title" element={<Service />} />
+        <Route path="/service/:slug" element={<Service />} />
         <Route path="/project/:title" element={<Project />} />
       </Routes>
       <Navigation />

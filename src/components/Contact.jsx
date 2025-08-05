@@ -14,8 +14,9 @@ import ContinuousTextSlider from "./ContinuousTextSlider";
 
 function Contact() {
   return (
-    <div
+    <section
       className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed flex flex-col items-center justify-center"
+      id="contact"
     >
         <ContinuousTextSlider/>
       <div className="p-4 md:p-10 rounded-xl w-full md:max-w-[90%]  grid md:grid-cols-2 gap-10">
@@ -115,7 +116,7 @@ function Contact() {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

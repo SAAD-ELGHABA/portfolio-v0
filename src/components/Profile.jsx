@@ -1,3 +1,4 @@
+import { ChartNoAxesGantt } from "lucide-react";
 import React from "react";
 
 function Profile() {
@@ -30,9 +31,10 @@ function Profile() {
         </a>
         <a
           href="#projects"
-          className="border border-blue-600 text-blue-600 px-5 py-2 rounded-lg hover:bg-blue-50 transition"
+          className="border border-blue-600 justify-center text-blue-600 px-5 py-2 rounded-lg hover:bg-blue-50 transition flex items-center space-x-2"
         >
-          View Projects
+          <ChartNoAxesGantt className="h-5 w-5" />
+          <span>View Projects</span>
         </a>
       </div>
     </div>

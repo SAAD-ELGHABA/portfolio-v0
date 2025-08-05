@@ -3,8 +3,10 @@ import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { useLocation } from "react-router";
 
 function NavBar() {
+  const location = useLocation();
   const [showLogo, setShowLogo] = useState(false);
 
   useEffect(() => {
@@ -15,10 +17,9 @@ function NavBar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   return (
     <nav className="container mx-auto p-4 flex justify-center lg:justify-between items-center relative">
-      {showLogo && (
+      {showLogo && location.pathname === "/" && (
         <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

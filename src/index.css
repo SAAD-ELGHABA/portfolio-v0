@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-
+*{
+  scroll-behavior: smooth;
+}
 
 .animated-net {
   position: fixed;

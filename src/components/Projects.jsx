@@ -43,7 +43,7 @@ const projects = [
 function Projects() {
   return (
     <div className="relative min-h-screen p-6 overflow-hidden"
-      id="projects"
+      
     >
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
