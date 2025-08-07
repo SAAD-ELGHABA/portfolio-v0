@@ -14,7 +14,10 @@ function Service() {
     getService();
   }, []);
   const LucideIcon = Icons[service?.icon] || Icons["Circle"];
-
+  useEffect(() => {
+    window?.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+  
   return (
     <div className="min-h-screen w-[90%] mx-auto  py-6">
       <div className="grid md:grid-cols-3 gap-6">

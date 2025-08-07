@@ -26,6 +26,7 @@ const FadeInWhenVisible = ({ children, delay = 0 }) => {
     >
       {children}
     </motion.div>
+    // <div>{children}</div>
   );
 };
 

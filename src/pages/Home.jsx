@@ -12,7 +12,7 @@ import Services from "../components/Services.jsx";
 function Home() {
   return (
     <div className="relative min-h-screen w-full bg-fixed bg-cover bg-center">
-      <main className="pt-20 space-y-20">
+      <main className="pt-20 ">
         <FadeInWhenVisible delay={0.1}>
           <HeroSection />
         </FadeInWhenVisible>

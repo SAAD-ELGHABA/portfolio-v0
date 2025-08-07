@@ -25,7 +25,7 @@
       },
       {
         "heading": "Gallery",
-        "images": ["/services/web-dev-1.jpg", "/services/web-dev-2.jpg"]
+        "images": ["/services/web/img-1.png", "/services/web/img-2.png","/services/web/img-3.png","/services/web/img-4.png","/services/web/img-5.png","/services/web/img-6.png","/services/web/img-7.png","/services/web/img-8.png","/services/web/img-9.png","/services/web/img-10.png"]
       }
     ],
     "aside": {
@@ -59,7 +59,7 @@
       },
       {
         "heading": "Sample Work",
-        "images": ["/services/ui-ux-1.jpg", "/services/ui-ux-2.jpg"]
+        "images": ["/services/ui-ux/img-1.png", "/services/ui-ux/img-2.png","/services/ui-ux/img-3.png","/services/ui-ux/img-4.png","/services/ui-ux/img-5.png","/services/ui-ux/img-6.png","/services/ui-ux/img-7.png","/services/ui-ux/img-8.png","/services/ui-ux/img-9.png"]
       }
     ],
     "aside": {
@@ -84,65 +84,30 @@
     "icon": "ServerCog",
     "sections": [
       {
-        "heading": "Overview",
-        "content": "Backend development focuses on the server side, database management, and API creation."
+  "heading": "Overview",
+  "content": "Backend development focuses on the server side of web applications, where the core logic, database interactions, authentication, and API integrations take place. It involves building and maintaining the infrastructure that powers frontend functionality, ensuring data is processed securely and efficiently. Technologies such as Node.js, Laravel, Python, or Java are often used alongside databases like MySQL, PostgreSQL, or MongoDB. A backend developer ensures seamless communication between the client and server, while also optimizing performance, scalability, and security."
+
       },
-      {
-        "heading": "Security & Scalability",
-        "content": "I implement authentication, data validation, and performance optimization to ensure reliable apps."
-      },
+{
+  "heading": "Security & Scalability",
+  "content": "I implement robust authentication mechanisms, secure data validation, and adhere to best practices in API and server security to protect applications from vulnerabilities. Additionally, I design scalable architectures that can handle increasing traffic and data loads efficiently. This includes performance optimization, database indexing, caching strategies, and load balancing to ensure that applications remain fast, stable, and reliable under high demand."
+}
+,
       {
         "heading": "Technologies Used",
-        "content": "Laravel, Node.js, Express, MongoDB, MySQL."
-      },
-      {
-        "heading": "Project Gallery",
-        "images": ["/services/backend-1.jpg", "/services/backend-2.jpg"]
+        "content": "Php, Laravel, Node.js, Express, Python, MongoDB, MySQL."
       }
     ],
     "aside": {
       "highlights": [
         "Secure and scalable backend",
-        "RESTful APIs with Laravel or Node.js",
+        "RESTful APIs with Laravel or Node.js or python",
         "Data validation and auth systems",
         "Databases: MySQL, MongoDB"
       ]
     }
   },
-  {
-    "id": "mobile-app",
-    "slug": "mobile-app-design",
-    "title": "Mobile App Design",
-    "summary": "Designing intuitive and responsive mobile applications for iOS and Android platforms.",
-    "description": "I create cross-platform mobile app designs that are beautiful and user-friendly, optimized for both iOS and Android.",
-    "dateCreated": "2024-08-07",
-    "tags": ["Mobile Design", "Figma", "Prototyping", "Cross-platform"],
-    "author": "Saad Lraba",
-    "bannerImage": "/bg.jpg",
-    "icon": "Smartphone",
-    "sections": [
-      {
-        "heading": "Design Approach",
-        "content": "My approach centers on creating fluid user interactions and visually appealing interfaces tailored for mobile devices."
-      },
-      {
-        "heading": "Tools",
-        "content": "Figma, Sketch, Adobe XD."
-      },
-      {
-        "heading": "Showcase",
-        "images": ["/services/mobile-app-1.jpg"]
-      }
-    ],
-    "aside": {
-      "highlights": [
-        "Designs for iOS and Android",
-        "Cross-platform consistency",
-        "Modern mobile UI trends",
-        "Tools: Figma, Adobe XD"
-      ]
-    }
-  },
+
   {
     "id": "ai",
     "slug": "integrating-ai",
@@ -165,7 +130,7 @@
       },
       {
         "heading": "Examples",
-        "images": ["/services/ai-1.jpg"]
+        "images": ["/services/ai/img-1.png","/services/ai/img-2.png"]
       }
     ],
     "aside": {
@@ -174,36 +139,6 @@
         "Python-based ML solutions",
         "Integration with OpenAI and Hugging Face",
         "Smarter, dynamic user experiences"
-      ]
-    }
-  },
-  {
-    "id": "deployment",
-    "slug": "deployment",
-    "title": "Deployment",
-    "summary": "Deploying and maintaining your applications in cloud environments for maximum uptime.",
-    "description": "I set up and maintain deployment pipelines on platforms like AWS, Vercel, and Netlify to keep your applications live and scalable.",
-    "dateCreated": "2024-08-11",
-    "tags": ["AWS", "CI/CD", "Cloud", "Vercel"],
-    "author": "Saad Lraba",
-    "bannerImage": "/bg.jpg",
-    "icon": "CloudUpload",
-    "sections": [
-      {
-        "heading": "Deployment Process",
-        "content": "Includes setting up CI/CD, monitoring uptime, and automating tests and builds."
-      },
-      {
-        "heading": "Platforms",
-        "content": "AWS, DigitalOcean, Netlify, Vercel."
-      }
-    ],
-    "aside": {
-      "highlights": [
-        "CI/CD pipeline setup",
-        "Monitoring & logs",
-        "Cloud platforms: AWS, Vercel",
-        "Automated testing and deployments"
       ]
     }
   },
@@ -219,10 +154,11 @@
     "bannerImage": "/bg.jpg",
     "icon": "Wrench",
     "sections": [
-      {
-        "heading": "Support Services",
-        "content": "Includes monitoring, troubleshooting, patching, and performance tuning."
-      },
+{
+  "heading": "Support Services",
+  "content": "Support services cover ongoing monitoring of application performance and system health to proactively detect issues. I handle troubleshooting of bugs, server errors, and user-reported problems, ensuring minimal disruption. Regular patching and updates are applied to maintain security and compatibility. Additionally, performance tuning is conducted to optimize server response times, database queries, and overall system efficiency, ensuring the application runs smoothly and reliably in production."
+}
+,
       {
         "heading": "Regular Updates",
         "content": "Keeping your apps updated with the latest dependencies and security patches."

@@ -1,0 +1,38 @@
+[
+      {
+    "title": "AI Desktop Assistant",
+    "description":
+      "Voice-enabled AI assistant built with Python, PyQt, and DeepSeek API.",
+    "tech": ["Python", "PyQt5", "SpeechRecognition", "TTS"]
+  },
+  {
+    "title": "Real Estate Web App",
+    "description":
+      "Full-stack platform for listing, searching, and chatting about properties.",
+    "tech": ["React", "Laravel", "Node.js", "MongoDB"],
+    "img": "/projects/splashscreen-locatech.png"
+  },
+  {
+    "title": "E-Commerce Admin Dashboard",
+    "description":
+      "Dynamic dashboard to manage content, users, and orders with charts.",
+    "tech": ["React", "Laravel", "Inertia.js", "Tailwind CSS"]
+  },
+  {
+    "title": "Code Collaboration Platform",
+    "description":
+      "Real-time collaborative coding interface with Git integration and AI help.",
+    "tech": ["React", "Python", "Socket.io", "Framer Motion"]
+  },
+  {
+    "title": "Background Remover Tool",
+    "description":
+      "Drag-and-drop tool for removing image backgrounds using Python.",
+    "tech": ["Python", "rembg", "Flask", "React"]
+  },
+  {
+    "title": "Chat App with Laravel Auth",
+    "description": "MERN stack chat app where Laravel handles authentication.",
+    "tech": ["React", "Express", "MongoDB", "Laravel"]
+  }
+]

@@ -57,14 +57,14 @@ function Main({
         </div>
       </div>
       <div>
-        <h4 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 drop-shadow-lg">
+        <h4 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 drop-shadow-lg">
           {summary}
         </h4>
       </div>
       <div className="border-l-4 bg-blue-100 border-blue-600 p-4 ">
         <p className="text-blue-600 font-medium"> {description}</p>
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-2">
         {sections?.map((s, index) => (
           <div key={index}>
             <div className="flex items-center space-x-2">
@@ -75,7 +75,7 @@ function Main({
             </div>
             <p>{s?.content}</p>
             <div>
-              <ServiceGallery images={s?.images} />
+              <ServiceGallery images={s?.images} service={title} />
             </div>
           </div>
         ))}
