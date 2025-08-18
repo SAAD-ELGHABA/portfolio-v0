@@ -1,0 +1,176 @@
+[
+  {
+    "id": "web-dev",
+    "slug": "web-development",
+    "title": "Web Development",
+    "summary": "Building responsive and dynamic websites using the latest technologies.",
+    "description": "From personal portfolios to large-scale applications, I build clean and high-performing web experiences.",
+    "dateCreated": "2024-08-01",
+    "tags": ["React", "Laravel", "Responsive Design", "SEO"],
+    "author": "Saad Lraba",
+    "bannerImage": "/bg.jpg",
+    "icon": "Code2",
+    "sections": [
+      {
+        "heading": "Overview",
+        "content": "Web development involves building fast, scalable, and responsive websites. Using technologies like React for the frontend and Laravel for the backend, I create seamless user experiences."
+      },
+      {
+        "heading": "Process",
+        "content": "I start with gathering requirements, designing wireframes, developing frontend and backend, testing, and finally deploying to production."
+      },
+      {
+        "heading": "Technologies Used",
+        "content": "React, Laravel, Tailwind CSS, REST APIs, Git, Vercel."
+      },
+      {
+        "heading": "Gallery",
+        "images": ["/services/web/img-1.png", "/services/web/img-2.png","/services/web/img-3.png","/services/web/img-4.png","/services/web/img-5.png","/services/web/img-6.png","/services/web/img-7.png","/services/web/img-8.png","/services/web/img-9.png","/services/web/img-10.png"]
+      }
+    ],
+    "aside": {
+      "highlights": [
+        "Frontend with React, backend with Laravel",
+        "Responsive and SEO-optimized design",
+        "Full-stack delivery from design to deployment",
+        "Live on platforms like Vercel"
+      ]
+    }
+  },
+  {
+    "id": "ui-ux",
+    "slug": "ui-ux-design",
+    "title": "UI-UX Design",
+    "summary": "Designing clean and user-friendly interfaces to enhance user experience.",
+    "description": "I design elegant and intuitive interfaces focusing on usability and accessibility to ensure delightful user experiences.",
+    "dateCreated": "2024-08-03",
+    "tags": ["Figma", "User Research", "Prototyping", "Accessibility"],
+    "author": "Saad Lraba",
+    "bannerImage": "/bg.jpg",
+    "icon": "LayoutDashboard",
+    "sections": [
+      {
+        "heading": "Design Philosophy",
+        "content": "Good design is user-centered and data-driven. I focus on wireframing, prototyping, and iterating based on user feedback."
+      },
+      {
+        "heading": "Tools & Techniques",
+        "content": "Figma, Adobe XD, user journey mapping, usability testing."
+      },
+      {
+        "heading": "Sample Work",
+        "images": ["/services/ui-ux/img-1.png", "/services/ui-ux/img-2.png","/services/ui-ux/img-3.png","/services/ui-ux/img-4.png","/services/ui-ux/img-5.png","/services/ui-ux/img-6.png","/services/ui-ux/img-7.png","/services/ui-ux/img-8.png","/services/ui-ux/img-9.png"]
+      }
+    ],
+    "aside": {
+      "highlights": [
+        "User-first design principles",
+        "Wireframing & prototyping in Figma",
+        "Accessibility-focused UI",
+        "Usability testing & iteration"
+      ]
+    }
+  },
+  {
+    "id": "backend",
+    "slug": "backend-solutions",
+    "title": "Backend Solutions",
+    "summary": "Creating secure and scalable APIs and databases for applications.",
+    "description": "I build reliable, secure, and scalable backend systems and APIs using frameworks like Laravel and Node.js.",
+    "dateCreated": "2024-08-05",
+    "tags": ["Node.js", "Laravel", "API", "Database"],
+    "author": "Saad Lraba",
+    "bannerImage": "/bg.jpg",
+    "icon": "ServerCog",
+    "sections": [
+      {
+  "heading": "Overview",
+  "content": "Backend development focuses on the server side of web applications, where the core logic, database interactions, authentication, and API integrations take place. It involves building and maintaining the infrastructure that powers frontend functionality, ensuring data is processed securely and efficiently. Technologies such as Node.js, Laravel, Python, or Java are often used alongside databases like MySQL, PostgreSQL, or MongoDB. A backend developer ensures seamless communication between the client and server, while also optimizing performance, scalability, and security."
+
+      },
+{
+  "heading": "Security & Scalability",
+  "content": "I implement robust authentication mechanisms, secure data validation, and adhere to best practices in API and server security to protect applications from vulnerabilities. Additionally, I design scalable architectures that can handle increasing traffic and data loads efficiently. This includes performance optimization, database indexing, caching strategies, and load balancing to ensure that applications remain fast, stable, and reliable under high demand."
+}
+,
+      {
+        "heading": "Technologies Used",
+        "content": "Php, Laravel, Node.js, Express, Python, MongoDB, MySQL."
+      }
+    ],
+    "aside": {
+      "highlights": [
+        "Secure and scalable backend",
+        "RESTful APIs with Laravel or Node.js or python",
+        "Data validation and auth systems",
+        "Databases: MySQL, MongoDB"
+      ]
+    }
+  },
+
+  {
+    "id": "ai",
+    "slug": "integrating-ai",
+    "title": "Integrating AI",
+    "summary": "Embedding artificial intelligence to make your apps smarter and more interactive.",
+    "description": "I integrate AI features like natural language processing, recommendation systems, and chatbots to enhance app capabilities.",
+    "dateCreated": "2024-08-09",
+    "tags": ["AI", "Machine Learning", "Chatbots", "Python"],
+    "author": "Saad Lraba",
+    "bannerImage": "/bg.jpg",
+    "icon": "BrainCircuit",
+    "sections": [
+      {
+        "heading": "Capabilities",
+        "content": "Implement AI models to personalize user experience and automate repetitive tasks."
+      },
+      {
+        "heading": "Tools & Frameworks",
+        "content": "Python, TensorFlow, OpenAI API, Hugging Face."
+      },
+      {
+        "heading": "Examples",
+        "images": ["/services/ai/img-1.png","/services/ai/img-2.png"]
+      }
+    ],
+    "aside": {
+      "highlights": [
+        "Chatbots, NLP, recommendations",
+        "Python-based ML solutions",
+        "Integration with OpenAI and Hugging Face",
+        "Smarter, dynamic user experiences"
+      ]
+    }
+  },
+  {
+    "id": "maintenance",
+    "slug": "maintenance",
+    "title": "Maintenance",
+    "summary": "Providing ongoing support, updates, and optimizations to keep your systems running smoothly.",
+    "description": "Offering post-launch support including bug fixes, performance improvements, and feature updates.",
+    "dateCreated": "2024-08-13",
+    "tags": ["Support", "Updates", "Performance", "Security"],
+    "author": "Saad Lraba",
+    "bannerImage": "/bg.jpg",
+    "icon": "Wrench",
+    "sections": [
+{
+  "heading": "Support Services",
+  "content": "Support services cover ongoing monitoring of application performance and system health to proactively detect issues. I handle troubleshooting of bugs, server errors, and user-reported problems, ensuring minimal disruption. Regular patching and updates are applied to maintain security and compatibility. Additionally, performance tuning is conducted to optimize server response times, database queries, and overall system efficiency, ensuring the application runs smoothly and reliably in production."
+}
+,
+      {
+        "heading": "Regular Updates",
+        "content": "Keeping your apps updated with the latest dependencies and security patches."
+      }
+    ],
+    "aside": {
+      "highlights": [
+        "Ongoing bug fixes & support",
+        "Performance tuning & security updates",
+        "Monitoring and troubleshooting",
+        "Post-launch service availability"
+      ]
+    }
+  }
+]
