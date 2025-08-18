@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import {
   Phone,
   Mail,
@@ -7,19 +7,76 @@ import {
   Twitter,
   Instagram,
   Linkedin,
-  Send,
   MoveUpRight,
 } from "lucide-react";
+import emailjs from "emailjs-com";
 import ContinuousTextSlider from "./ContinuousTextSlider";
+import { toast } from "sonner";
 
 function Contact() {
+  const formRef = useRef();
+  const [loading, setLoading] = useState(false);
+  const [messageSent, setMessageSent] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    const form = formRef.current;
+    const senderEmail = form.email.value;
+    const senderName = form.name.value;
+
+    form.title.value = `A message from ${senderEmail}`;
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          emailjs
+            .send(
+              import.meta.env.VITE_EMAILJS_SERVICE_ID,
+              import.meta.env.VITE_EMAILJS_AUTO_REPLY_TEMPLATE_ID,
+              {
+                name: senderName,
+                email: senderEmail,
+              },
+              import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            )
+            .then(() => {
+              setLoading(false);
+              setEmail("");
+              toast?.success("Your message has been sent successfully!");
+              form.reset();
+            })
+            .catch((err) => {
+              setLoading(false);
+              console.error(err.text);
+              toast?.error("Message sent, but auto-reply failed!");
+            });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error.text);
+          toast?.error("Oops! Something went wrong. Please try again.");
+        }
+      );
+  };
+
+  const [email, setEmail] = useState("");
+
   return (
     <section
       className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed flex flex-col items-center justify-center"
       id="contact"
     >
-        <ContinuousTextSlider/>
-      <div className="p-4 md:p-10 rounded-xl w-full md:max-w-[90%]  grid md:grid-cols-2 gap-10">
+      <ContinuousTextSlider />
+      <div className="p-4 md:p-10 rounded-xl w-full md:max-w-[90%] grid md:grid-cols-2 gap-10">
         <div className="space-y-6">
           <h2 className="text-4xl font-bold">
             Have a Project in Mind? <br /> Let’s Talk!
@@ -70,7 +127,13 @@ function Contact() {
         </div>
 
         <div className="bg-white/10 backdrop-blur-md md:px-6 py-3 shadow-lg text-black md:p-6 p-2 rounded">
-          <form className="space-y-5">
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
+            <input
+              type="hidden"
+              name="title"
+              required
+              value={`A message from ${email}`}
+            />
             <div>
               <label className="block text-sm font-medium mb-1">
                 Full Name
@@ -90,6 +153,8 @@ function Contact() {
                 type="email"
                 name="email"
                 placeholder="you@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-1 focus:ring-blue-600 focus:outline-none"
                 required
               />
@@ -108,10 +173,16 @@ function Contact() {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-white hover:text-blue-600 transition flex items-center space-x-2 justify-center cursor-pointer border border-blue-600"
+              disabled={loading}
+              className={`w-full py-2 rounded-lg flex items-center space-x-2 justify-center border transition 
+    ${
+      loading
+        ? "bg-gray-400 text-gray-700 cursor-not-allowed border-gray-400"
+        : "bg-blue-600 text-white hover:bg-white hover:text-blue-600 border-blue-600"
+    }`}
             >
-              <span>Send Message</span>
-              <MoveUpRight  className="h-4 w-4"/>
+              <span>{loading ? "Sending..." : "Send Message"}</span>
+              <MoveUpRight className="h-4 w-4" />
             </button>
           </form>
         </div>
