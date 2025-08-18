@@ -8,7 +8,7 @@ import AnimatedBg from "./assets/AnimatedBg.jsx";
 import NavBar from "./components/NavBar.jsx";
 import Navigation from "./components/Navigation.jsx";
 import Project from "./pages/Project.jsx";
-
+import { Toaster } from "sonner";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -34,6 +34,7 @@ function App() {
         <Route path="/project/:slug" element={<Project />} />
       </Routes>
       <Navigation />
+      <Toaster />
     </>
   );
 }
