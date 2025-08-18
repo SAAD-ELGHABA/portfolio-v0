@@ -5,7 +5,7 @@
     "summary": "Voice-enabled AI assistant built with Python, PyQt, and DeepSeek API.",
     "tech": ["Python", "PyQt5", "SpeechRecognition", "TTS"],
     "description": "A desktop-based voice assistant capable of listening to user commands, performing actions such as opening programs or searching online, and responding using text-to-speech. Built with Python, PyQt5 for the interface, SpeechRecognition for voice input, and DeepSeek API for AI-powered responses.",
-    "img": "/projects/ai-desktop-assistant.png"
+    "img": ""
   },
   {
     "title": "Real Estate Web App (Locatech)",
@@ -14,7 +14,7 @@
     "tech": ["React", "Laravel", "Node.js", "MongoDB", "Tailwind CSS", "Socket.io", "DeepSeek API"],
     "description": "🎯 Locatech – Real Estate Web Platform for the Moroccan Market 🇲🇦\n\nAfter 2 months of collaborative development with Saad Baouli, we’re proud to introduce Locatech — a full-stack real estate web application built specifically for buying and renting properties in Morocco.\n\nUnlike marketplace platforms like Airbnb, Locatech focuses on helping users find their future homes, villas, or apartments with support for real-time communication, multi-role access, and AI-powered property suggestions.\n\n🛠️ Tech Stack\nFrontend: React.js · Tailwind CSS · Redux\nBackend: Laravel (main API), Node.js + Express.js (chat server), WordPress (blog system)\nDatabases: MySQL (users, listings), MongoDB (chat)\nReal-Time: Socket.io (messaging + notifications)\nAI Assistant: DeepSeek API (smart property suggestions)\n\n👥 Platform Roles & Features\n- Client: Browse, filter, and view detailed property listings, chat with courtiers, and provide feedback.\n- Courtier: Post and manage properties with approval rules depending on agency level.\n- Assistant: Moderates listings, conversations, and confirms deal reports.\n- Admin: Manages all roles, blog content, and configurations.\n\n💡 What We Learned\nLocatech challenged us to bring together diverse technologies into one platform, balancing UX, data flow, and real-time features.",
     "img": "/projects/locatech/splashscreen-locatech.png",
-    "video": "/projects/locatech/locatech-vid-v1.mp4",
+    "video": "https://youtu.be/czgTbVDvNJE",
     "gallery": [
       "/projects/locatech/gallery/img-1.png",
       "/projects/locatech/gallery/img-2.png",
@@ -47,7 +47,7 @@
     "summary": "Dynamic dashboard to manage content, users, and orders with charts.",
     "tech": ["React", "Laravel", "Inertia.js", "Tailwind CSS"],
     "description": "🚀 Introducing LearCodeLab: A Full-Stack Educational Platform Built by Future Developers 💡\n\nOur team:\nSaad Baouli\nYASSIR EL MAHDAOUI\nRiyad El Benna\nMouhssine Dwissy\n\n🧠 What is LearCodeLab?\nIt’s a modern, full-featured educational platform designed specifically for students (stagiaires), instructors (formateurs), and administrators. Our mission? To learn, practice, and share knowledge in an environment that feels both familiar and powerful.\n\n🧩 Key Features:\n✅ Role-Based Dashboard: Custom dashboards for students, instructors, and admins.\n✅ Social Learning Experience: Inspired by platforms like Facebook — users can create and interact with content we call collections: Share ideas, problems, and solutions, React (upvote/downvote) and comment on collections, Save collections as favorites.\n✅ Real-Time Collaboration: Group Rooms, Live Notifications powered by Socket.io.\n✅ Built-In Code Editor: Monaco Editor.\n✅ Global Search Engine.\n✅ Theming & Personalization: 9+ UI themes.\n✅ Resource Hub: Curated learning resources shared by admins.\n\n🛠 Tech Stack:\nFrontend: React (Vite), Tailwind CSS\nBackend: Laravel\nReal-Time: Socket.io\nEditor: Monaco\n\n🎓 Built with passion and teamwork, LearCodeLab represents the culmination of our 2-year journey as future full-stack developers. It's not just a school project — it's a platform built by learners, for learners.\n\nWe’re excited to keep pushing forward, and this is just the beginning. 🌱",
-    "img": "/projects/ecommerce-dashboard.png"
+    "img": ""
   },
   {
     "title": "Code Collaboration Platform",
@@ -56,7 +56,7 @@
     "tech": ["React", "Python", "Socket.io", "Framer Motion"],
     "description": "🚀 Introducing LearCodeLab: A Full-Stack Educational Platform Built by Future Developers 💡\n\nOur team:\nSaad Baouli\nYASSIR EL MAHDAOUI\nRiyad El Benna\nMouhssine Dwissy\n\n🧠 What is LearCodeLab?\nIt’s a modern, full-featured educational platform designed specifically for students (stagiaires), instructors (formateurs), and administrators. Our mission? To learn, practice, and share knowledge in an environment that feels both familiar and powerful.\n\n🧩 Key Features:\n✅ Role-Based Dashboard: Custom dashboards for students, instructors, and admins.\n✅ Social Learning Experience: Inspired by platforms like Facebook — users can create and interact with content we call collections: Share ideas, problems, and solutions, React (upvote/downvote) and comment on collections, Save collections as favorites.\n✅ Real-Time Collaboration: Group Rooms, Live Notifications powered by Socket.io.\n✅ Built-In Code Editor: Monaco Editor.\n✅ Global Search Engine.\n✅ Theming & Personalization: 9+ UI themes.\n✅ Resource Hub: Curated learning resources shared by admins.\n\n🛠 Tech Stack:\nFrontend: React (Vite), Tailwind CSS\nBackend: Laravel\nReal-Time: Socket.io\nEditor: Monaco\n\n🎓 Built with passion and teamwork, LearCodeLab represents the culmination of our 2-year journey as future full-stack developers. It's not just a school project — it's a platform built by learners, for learners.\n\nWe’re excited to keep pushing forward, and this is just the beginning. 🌱",
     "img": "/projects/learncodelab/LearnCodeLab-cover.jpg",
-    "video": "/projects/learncodelab/learcodelab-vid-v1.mp4",
+    "video": "https://youtu.be/bDXDCvGACSs",
         "gallery": [
       "/projects/learncodelab/gallery/img-1.png",
       "/projects/learncodelab/gallery/img-2.png",
@@ -85,7 +85,7 @@
     "summary": "Drag-and-drop tool for removing image backgrounds using Python.",
     "tech": ["Python", "rembg", "Flask", "React"],
     "description": "A lightweight image processing tool where users can drag and drop images to remove their backgrounds instantly. Built with Python and rembg for background removal, Flask as the API backend, and React for the interface.",
-    "img": "/projects/background-remover.png"
+    "img": ""
   },
   {
     "title": "Chat App with Laravel Auth",
@@ -93,6 +93,6 @@
     "summary": "MERN stack chat app where Laravel handles authentication.",
     "tech": ["React", "Express", "MongoDB", "Laravel"],
     "description": "A chat application built with the MERN stack for real-time messaging, using Laravel as the authentication layer. Supports user registration, login, and secure session handling.",
-    "img": "/projects/chat-laravel-auth.png"
+    "img": ""
   }
 ]

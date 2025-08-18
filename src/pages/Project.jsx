@@ -11,10 +11,13 @@ function Project() {
   useEffect(() => {
     setProject(projects?.find((p) => p?.slug === slug));
   }, [slug]);
+  useEffect(() => {
+    window?.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="min-h-screen">
       <div className="w-[90%] mx-auto my-10">
-        <div className="flex items-center space-x-1 text-gray-900 font-medium">
+        <div className="flex items-center space-x-1 text-gray-900 font-medium text-sm">
           <Link to={"/"} className="hover:text-blue-600">
             Home
           </Link>
@@ -34,7 +37,7 @@ function Project() {
                 title={`demo : ${project?.title}`}
               />
             </div>
-            <div>
+            <div className="mt-4 lg:mt-0">
               <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 drop-shadow-lg">
                 {project?.summary}
               </h1>
@@ -53,7 +56,7 @@ function Project() {
           <div>
             <ImageSlider images={project?.gallery} dir={true} />
           </div>
-          <div className="w-[70%]">
+          <div className="lg:w-[70%]">
             <div
               dangerouslySetInnerHTML={{
                 __html: project?.description.replace(/\n/g, "<br/>"),

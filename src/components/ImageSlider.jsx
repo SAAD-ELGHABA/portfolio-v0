@@ -47,7 +47,7 @@ function ImageSlider({ images = [], dir = true }) {
               <img
                 src={img}
                 alt={alt || `image-${idx}`}
-                className="w-26 h-16 lg:w-auto lg:h-66 mx-auto object-contain"
+                className="w-auto h-46 lg:w-auto lg:h-66 mx-auto object-contain"
               />
             </div>
           </div>
